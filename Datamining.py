@@ -23,50 +23,78 @@ st.set_page_config(
 )
 
 # Custom CSS for styling
+# Custom CSS for styling (NEW THEME)
+
 st.markdown("""
 <style>
-    .main-header {
-        font-size: 2.5rem;
-        color: #1f77b4;
-        text-align: center;
-        margin-bottom: 2rem;
-        font-weight: bold;
-    }
-    .sub-header {
-        font-size: 1.5rem;
-        color: #2c3e50;
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 0.5rem;
-    }
-    .metric-card {
-        background-color: #f8f9fa;
-        border-radius: 10px;
-        padding: 1rem;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .insight-box {
-        background-color: #e8f4f8;
-        border-left: 4px solid #3498db;
-        padding: 1rem;
-        margin: 1rem 0;
-        border-radius: 0 5px 5px 0;
-    }
-    .warning-box {
-        background-color: #fff3cd;
-        border-left: 4px solid #ffc107;
-        padding: 1rem;
-        margin: 1rem 0;
-        border-radius: 0 5px 5px 0;
-    }
-    .success-box {
-        background-color: #d4edda;
-        border-left: 4px solid #28a745;
-        padding: 1rem;
-        margin: 1rem 0;
-        border-radius: 0 5px 5px 0;
-    }
+
+/* Background */
+.stApp {
+    background-color: #0f172a;
+}
+
+/* Main header */
+.main-header {
+    font-size: 2.6rem;
+    color: #38bdf8;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Sub header */
+.sub-header {
+    font-size: 1.5rem;
+    color: #a5b4fc;
+    border-bottom: 2px solid #6366f1;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Cards */
+.metric-card {
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 1rem;
+    color: white;
+}
+
+/* Insight box */
+.insight-box {
+    background-color: #1e293b;
+    border-left: 5px solid #38bdf8;
+    padding: 1rem;
+    border-radius: 6px;
+    color: #e2e8f0;
+}
+
+/* Warning box */
+.warning-box {
+    background-color: #3f1d1d;
+    border-left: 5px solid #facc15;
+    padding: 1rem;
+    color: #fde68a;
+}
+
+/* Success box */
+.success-box {
+    background-color: #052e16;
+    border-left: 5px solid #22c55e;
+    padding: 1rem;
+    color: #bbf7d0;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #020617;
+}
+
+/* Buttons */
+.stButton>button {
+    background-color: #6366f1;
+    color: white;
+    border-radius: 8px;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
